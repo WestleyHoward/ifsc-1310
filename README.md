@@ -1,1 +1,2 @@
 # ifsc-1310
+.prettierrc is utilized in order to config the appearance of the code. I cannot properly read code with single spaces, so 4 space tabs as a default allow me to work more efficiently and see which layer something is the moment I look at it.
