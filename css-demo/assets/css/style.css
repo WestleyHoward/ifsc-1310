@@ -1,0 +1,37 @@
+/* -------css-demo------- */
+
+/* -----Color Scheme----- 
+Main Color - #F5F5F5
+Highlights - #FB2442
+Hover - #62A870*/
+/*  ---------------Box Sizing-----------------  */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+body{
+    background-color:#F5F5F5;
+    font-family: "Raleway", sans-serif;
+}
+
+main{
+
+}
+
+header.primary{
+    background-color:#FB2442;
+    color: #ffffff;
+    text-align: center;
+    text-shadow:1px 1px #000000;
+}
+
+a{
+  color: #62A870
+}
+
