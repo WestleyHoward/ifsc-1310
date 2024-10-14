@@ -54,6 +54,7 @@ html {
     margin:auto;
     width:800px;
     max-width:960;
+    padding:10px 0 10px 0;
   }
 
   /* - - - - - Global Styles - - - - -*/
@@ -156,10 +157,11 @@ aside[role="complementary"]{
   box-shadow: 6px 6px 6px 6px rgba(0,0,0,.75);
 }
 
-aside .container{
+section#blog.container{
+  /*for whatever reason, changing this tag from #blog to section#blog.container actually made everything work as intended.*/
   display:flex;
   flex-direction:row;
-  justify-content:space-evenly;
+  justify-content:space-between;
   gap:40px;
 }
 
@@ -201,12 +203,39 @@ aside article.widget footer{
   header.primary nav a{
     display:block;
   }
+
+  .container{
+    justify-content:center;
+    max-width:500px;
+  }
 }
 
-@media screen and (max-width: 460px){
+@media screen and (max-width: 500px){
 
-  #blog{
+  .container{
+    justify-content:center;
+    max-width:450px;
+  }
+  
+
+  section#blog.container{
     flex-direction:column;
     justify-content:center;
+    align-items:center;
+    max-width: 450px;
+    text-align:center;
   }
+
+  #blog img{
+    display:block;
+    margin: 0 auto;
+    text-align:center;
+  }
+
+  aside .container{
+    flex-direction:column;
+    justify-content:center;
+    max-width: 360px;
+  }
+
 }
