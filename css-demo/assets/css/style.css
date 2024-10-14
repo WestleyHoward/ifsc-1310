@@ -190,8 +190,8 @@ aside article.widget footer{
 
 /* - - - - - MEDIA QUERIES - - - - - */
 
-@media screen and (max-width: 560px){
-
+@media screen and (max-width: 1000px){
+/*In reality, modern screens are far wider than they used to be. The IPhone 14 Pro Max is nearly 1000 pixels in width, nowhere near the recommended 560, and most modern mobile devices average above 700*/
   header.primary nav ul{
     flex-direction:column;
     gap:10px;
@@ -206,15 +206,15 @@ aside article.widget footer{
 
   .container{
     justify-content:center;
-    max-width:500px;
+    max-width:650px;
   }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 700px){
 
   .container{
     justify-content:center;
-    max-width:450px;
+    max-width:650px;
   }
   
 
@@ -222,7 +222,7 @@ aside article.widget footer{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    max-width: 450px;
+    max-width: 640px;
     text-align:center;
   }
 
@@ -235,7 +235,7 @@ aside article.widget footer{
   aside .container{
     flex-direction:column;
     justify-content:center;
-    max-width: 360px;
+    max-width: 560px;
   }
 
 }
