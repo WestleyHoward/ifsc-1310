@@ -1,0 +1,88 @@
+/* - - - - - DRAGON - - - - -*/
+
+/* -----Color Scheme----- 
+Main Color (Main) - #1F2F8C
+Secondary Color (Contrast) - #261F22
+Tertiary Color (Text, Points, Mid-Ground) - #F2F2F2 */
+
+/*  ---------------Box Sizing-----------------  */
+imj
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /* - - - - - Global Styles - - - - -*/
+
+
+body {
+    background: url(dragon/assets/img/spacex.png);
+}
+
+
+
+header.container#primary{
+    background-color: #1f2f8c;
+    color:#f2f2f2;
+    text-align: center;
+    text-shadow:1px 1px 1px #000000;
+    padding: 15px 40px 15px 40px;
+}
+
+header.container#primary h1{
+    font-size: 3.5rem;
+    margin: 12px 0 0;
+  }
+
+  header.container#primary nav{
+    max-width:960px;
+    margin:auto;
+  }
+
+  header.container#primary nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    justify-content:space-around;
+    padding:17px 0;
+  }
+
+  header.container#primary nav ul{
+  list-style-type:none;
+  }
+
+  header.container#primary nav ul li a{
+    font-size:1.5rem;
+    color:#f2f2f2;
+    text-decoration:none;
+    border:1px outset #f2f2f2;
+    padding:10px 40px;
+    background-color: rgba(0, 0, 0, 0.17);
+    border-radius:5px 30px;
+    transition:220ms;
+  }
+
+body{
+    background-color: #261f22;
+      font-family: "Quantico", sans-serif;
+      margin:0;
+  }
+
+section.container#primary{
+    color:#f2f2f2;
+    line-height:1.5;
+    margin:20px 200px;
+}
+
+footer{
+    color:#f2f2f2;
+    font-size:1.1rem;
+    background-color:#1f2f8c;
+    text-align:center;
+    padding:1px;
+}
+  
