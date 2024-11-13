@@ -57,7 +57,7 @@ img {
 /* ----- Global Styles ---- */
 
 body {
-  font-family: "Quantico", sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 0;
 }
 
@@ -72,7 +72,7 @@ header.primary {
 }
 
 header.primary::before {
-  content: "https://assets.codepen.io/7248/dragon-in-space.jpg";
+  content: "";
   background-image: url("https://assets.codepen.io/7248/dragon-in-space.jpg");
   background-size: cover;
   position: absolute;
@@ -131,7 +131,7 @@ header.primary nav a:visited {
   text-decoration: none;
   background-color: #000000;
   background-color: rgba(142, 166, 184, 0.4);
-  padding: 10px 18px;
+  padding: 8px 16px;
   border-radius: 10px;
   transition: 0.6s;
   display: block;
@@ -146,21 +146,19 @@ header.primary nav a:active {
 
 section#content {
   padding: 4em 0;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size:1.3em;
 }
 
-section#content h2{
-  font-family: "Quantico", sans-serif;
+section#content h2 {
+  font-family: "Goldman", cursive;
   font-size: 2.2em;
   color: #33536b;
   text-align: center;
 }
 
-/* - - - - - Articles - - - - - */
+/* ------------- Articles --------------- */
 
 section#articles {
-  background: #33536b;
+  background: #181c1f;
 }
 
 section#articles .container {
@@ -177,7 +175,7 @@ section#articles h2,
   flex: 0 0 100%;
   color: #33536b;
   text-align: center;
-  font-family: "Quantico", cursive;
+  font-family: "Goldman", cursive;
   font-size: 2em;
 }
 
@@ -197,14 +195,95 @@ section#articles h2 {
 }
 
 #articles article.post h2 {
-  color:#33536b;
   font-size: 1.5em;
   text-shadow: none;
+}
+
+#articles article.post:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+#articles article time,
+#articles article figcaption,
+#articles article footer {
+  font-size: 0.8em;
+  color: #c0c0c0;
+  text-transform: uppercase;
 }
 
 #articles .post a:link,
 #articles .post a:visited {
   color: #3b638b;
+}
+
+#articles .post figure {
+  margin: 0;
+}
+
+#articles .post img {
+  border-radius: 10px;
+}
+
+#articles ul {
+  padding: 0 20px;
+}
+#articles li {
+  margin-bottom: 20px;
+}
+
+/* ------------- Hero --------------- */
+
+#hero {
+  padding: 4em 0;
+}
+
+/* ------------- Aside --------------- */
+
+/* Attribute Selector */
+aside[role="complementary"] {
+  background-color: #181c1f;
+  color: #ffffff;
+  padding: 2.5em;
+}
+
+aside .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+aside article.widget {
+  width: 40%;
+}
+
+.widget.overview table {
+  font-size: 0.7em;
+  border-collapse: collapse;
+}
+
+.widget.overview table td {
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+}
+
+.widget.overview table td:nth-child(even) {
+  text-align: right;
+}
+aside article a:link,
+aside article a:visited {
+  color: #ffffff;
+  display: block;
+  margin-top: 1.2em;
+  letter-spacing: 1.2px;
+}
+
+aside article a:hover,
+aside article a:active {
+  text-decoration: none;
+}
+
+aside article footer {
+  display: none;
 }
 
 /*------ Footer ------*/
@@ -213,11 +292,13 @@ footer#colophon {
   background-color: #1b2c38;
 }
 
-#colophon{
-  padding:1px;
-  color:#F5F5F5;
-  font-size: 1.7rem;
+#colophon h6 {
+  padding: 20px;
+  margin: 0;
+  color: #fff;
   text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }
 
 #colophon h6 a:link,
