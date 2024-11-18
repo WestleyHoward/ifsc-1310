@@ -1,7 +1,7 @@
 /* Color Theme  
  #53616B 
  #1B2C38 
- #181C1F - Base
+ #151d3e - Base
  #33536B
  #8EA6B8
 */
@@ -62,7 +62,7 @@ body {
 }
 
 header.primary {
-  background-color: #181c1f;
+  background-color: #151d3e;
   text-align: center;
   color: #ffffff;
   text-shadow: 2px 2px #000000;
@@ -158,7 +158,15 @@ section#content h2 {
 /* ------------- Articles --------------- */
 
 section#articles {
-  background: #181c1f;
+  width:100%;
+}
+
+aside[role="complementary"] {
+  max-width:100%;
+}
+section#articles {
+  background: #151d3e;
+  max-width:100%;
 }
 
 section#articles .container {
@@ -234,22 +242,25 @@ section#articles h2 {
 /* ------------- Hero --------------- */
 
 #hero {
-  padding: 4em 0;
+  padding:4em 0;
 }
 
+img[role=hero]{
+  display:block;
+  margin:auto;
+  border:1px solid #cccccc;
+  padding:5px 5px 5px 5px;
+  margin:20px auto;
+}
 /* ------------- Aside --------------- */
 
 div .container{
-  background-color:#181c1f;
+  background-color:#151d3e;
   padding:2.5em;
   width:900px;
 }
 /* Attribute Selector */
-aside[role="complementary"] {
-  background-color: #181c1f;
-  color: #ffffff;
-  padding: 2.5em;
-}
+
 
 aside .container {
   display: flex;
@@ -294,7 +305,7 @@ aside article footer {
 /*------ Footer ------*/
 
 footer#colophon {
-  background-color: #1b2c38;
+  background-color: #151d3e;
 }
 
 #colophon h6 {
