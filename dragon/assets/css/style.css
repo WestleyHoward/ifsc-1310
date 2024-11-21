@@ -66,7 +66,6 @@ header.primary {
   text-align: center;
   color: #ffffff;
   text-shadow: 2px 2px #000000;
-  /* Shorhand T,R,B,L*/
   padding: 6em 2em;
   position: relative;
 }
@@ -104,7 +103,6 @@ header.primary h1 a {
 header.primary h2 {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2em;
-  /* Shorhand Three Value Top, Left/Right, Bottom*/
   margin: 20px auto 40px;
   position: relative;
 }
@@ -146,6 +144,8 @@ header.primary nav a:active {
 
 section#content {
   padding: 4em 0;
+  max-width:960px;
+  margin:auto;
 }
 
 section#content h2 {
@@ -256,33 +256,42 @@ img[role=hero]{
 
 div .container{
   background-color:#151d3e;
+  color:#c0c0c0;
   padding:2.5em;
-  width:900px;
+  max-width:100%;
 }
 /* Attribute Selector */
 
+div #container {
+  max-width:100%;
+}
 
-aside .container {
+aside #container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  max-width:100%;
 }
 
 aside article.widget {
-  width: 40%;
+  max-width: 100%;
 }
 
-.widget.overview table {
+.widget table caption {
+  font-size: 2.2em;
+}
+.widget table {
+  margin:auto;
   font-size: 0.7em;
   border-collapse: collapse;
 }
 
-.widget.overview table td {
+.widget table td {
   border-bottom: 1px solid #fff;
   padding: 10px;
 }
 
-.widget.overview table td:nth-child(even) {
+.widget table td:nth-child(even) {
   text-align: right;
 }
 aside article a:link,
