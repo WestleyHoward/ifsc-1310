@@ -155,6 +155,7 @@ section#content h2 {
   text-align: center;
 }
 
+
 /* ------------- Articles --------------- */
 
 section#articles {
@@ -279,7 +280,9 @@ aside article.widget {
 
 .widget table caption {
   font-size: 2.2em;
+  padding-bottom: 30px;
 }
+
 .widget table {
   margin:auto;
   font-size: 0.7em;
@@ -302,10 +305,6 @@ aside article a:visited {
   letter-spacing: 1.2px;
 }
 
-aside article a:hover,
-aside article a:active {
-  text-decoration: none;
-}
 
 aside article footer {
   display: none;
