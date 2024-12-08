@@ -137,8 +137,7 @@ header.primary nav ul li a:hover{
 }
 
 #content h2{
-  color:#FB2442;
-  border-bottom: 1px groove #FB2442;
+  border-bottom: 2px groove #FB2442;
 }
 
 #blog{

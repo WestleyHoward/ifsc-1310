@@ -12,6 +12,7 @@
 </head>
 
 <header class="primary"><h1>IFSC 1310 | Westley Howard</h1></header>
+<section id="content">
 <body class="main">
  <div class="container">
     <nav>
@@ -33,9 +34,16 @@
         </ul>
     <h2>Thoughts on Web Accessibility</h2>
         <p>To me, web accessibility means for a website to be fully functional and operable by just about anyone on the planet who can view the website. This is not just for the sake of making the web accessible for those with disabilities, either. In order to be truly accessible, the audience must be able to understand and be able to properly utilize the information they are provided in the website, through familiarity or a linear design. Ideally, we can find that an individual will be able to access the website with few to no issues. The individual must know when they are about to commit a change that would remove prior progress, submit a form, or do just about anything they may not truly intend for. Allowing the flow of information to be accessible to all is the key to internet's globalization.</p>
-    <h2>Flexbox Completion</h2>
     <h2>Thoughts on Progressive Enhancement</h2>
-        <p>To me, web accessibility means for a website to be fully functional and operable by just about anyone on the planet who can view the website. This is not just for the sake of making the web accessible for those with disabilities, either. In order to be truly accessible, the audience must be able to understand and be able to properly utilize the information they are provided in the website, through familiarity or a linear design. Ideally, we can find that an individual will be able to access the website with few to no issues. The individual must know when they are about to commit a change that would remove prior progress, submit a form, or do just about anything they may not truly intend for. Allowing the flow of information to be accessible to all is the key to internet's globalization.</p>
+        <p>Progressive Enhancement is effectively the best way to structure page development when keeping older systems in mind, as it emphasizes the importance of content over design. Since content is the main reason we have the internet in the first place, ensuring that as many people as possible can access the content in the first place is essential.</p>
+        <p>The first step to proper Progressive Enhancement is well thought out HTML markup, allowing those who cannot access CSS or JavaScript to view the page at the best possible capacity the device will allow them.</p>
+        <p>Secondly, CSS styles must be taken into consideration. If your CSS can fully function and look good without necessitating JavaScript, individuals who either disallow the permission or cannot run JavaScript for whatever reason there may be will still be capable of seeing the content in a more fleshed out way.</p>
+        <p>Finally, JavaScript can be added to grant those who meet all technical requirements an even further degree of flair and streamlining. At this layer, you are capable of writing nearly any code you would like in the final, fully progressed product.</p>
+        <p>One of the large benefits of Progressive Enhancement, as given by <a href="dragonv2/index.html">HubSpot Bling</a>, is that you can simply add on or replace later features with as few issues as possible, since the base is well developed enough to allow for additions without problems. On top of new features, the ever changing algorithm Search Engines utilize can be worked with far easier, as any necessary changes to stay relevant can be made in a similar fashion.</p>
+    <h2>Dragon Revision and Reflection</h2>
+        <p>In my revision of the Dragon Project, I have mostly gotten feedback on the FAQs page, stating that it was a little difficult to read, along with the table on the history page being relatively confusing to read as well.</p>
+        <p>These were my main areas of improvement in the project, and in order to solve these issues, I had looked into the past projects I have completed. In the CSS Demo, I had remembered the border bottom property, which acts similarly to an underline, but underlines the entire element, rather than the text itself. I found these to work as great dividers for my FAQ page, along with switching the questions to h3 tags while leaving a centered h2 title. This largely improved the machine readability of my project, as well as streamlining the page design. Additionally, utilizing lessons from Web Technology and Development, I fully reconstructed the entire table from the ground up in CSS, in order to create a vastly more readable piece. In order to include some JavaScript, I had replaced the hero on the index page with a similar image carousel. Following the principles of progressive enhancement, all of the page's content is visible without reading JavaScript, and the images are simply placed in a vertical collage.</p>
+        <p>The main areas of learning within this project were in figuring out exactly how to get a particular result from a line of code, at least to a simple understanding. In my original project, I had managed to write code conflicting enough to cause various problems in areas I had written nearly hundreds of lines above, which I had largely remedied in the final product. I had managed markup to a degree that little needed revision in my final product, only having to replace the hero link with a flow div that would include sub divs hosting my images for the hero collage. If I had started this project over, I would have utilize inspect element far more in examining the behavior of my code, as this practice alone has saved me countless hours of struggling and confusion.</p>
     <h2>Flexbox Completion</h2>
         <figure>
             <img src="assets/img/flexboxfroggy.png" alt="Flexbox Froggy IMG" width="500" height="280"/>
@@ -53,5 +61,6 @@
     <footer id="colophon" class="primary" role="contentinfo">
         <h6>&copy; 2024 Westley Howard</h6>
     </footer>
+</section>
 </body>
 </html>
