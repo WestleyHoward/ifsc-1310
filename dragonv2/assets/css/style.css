@@ -1,0 +1,306 @@
+/* Color Theme  
+ #53616B 
+ #1B2C38 
+ #151d3e - Base
+ #33536B
+ #8EA6B8
+*/
+
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+/* ----- Utility Styles ---- */
+
+.container {
+  margin: 40px auto;
+}
+
+/* ---- Responsive Images ----*/
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ----- Global Styles ---- */
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+  }
+   
+header.primary {
+    background-color: #33536b;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+    padding: 6em 2em;
+    position: relative;
+  }
+
+  header.primary::before {
+    content: "";
+    background-image: url("https://assets.codepen.io/7248/dragon-in-space.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+  }
+
+  header.primary h1 {
+    font-size: 3.2rem;
+    margin: 20px 0;
+    position: relative;
+  }
+
+  header.primary h1 a {
+    color: #ffffff;
+    background-image: url("https://assets.codepen.io/7248/logo-2.png");
+    display: block;
+    width: 460px;
+    height: 70px;
+    margin: 0 auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  header.primary h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    margin: 20px auto 40px;
+    position: relative;
+  }
+  
+  header.primary nav ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  header.primary nav li {
+    list-style-type: none;
+    padding: 0;
+    width: 20%;
+  }
+
+header.primary nav a:link,
+header.primary nav a:visited {
+  color: white;
+  text-decoration: none;
+  background-color: #000000;
+  background-color: rgba(142, 166, 184, 0.4);
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: 0.6s;
+  display: block;
+}
+
+header.primary nav a:hover,
+header.primary nav a:active {
+  background-color: rgba(51, 83, 107, 0.8);
+}
+
+/* ------------- Content --------------- */
+
+section#content {
+    padding: 4em 0;
+    max-width:960px;
+    margin:auto;
+    line-height:1.5;
+  }
+
+section#content h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.2em;
+    color: #33536b;
+    text-align: center;
+  }
+
+section#content h3{
+    color:#151d3e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4em;
+    border-bottom: 1px groove #151d3e;
+}
+
+/* ------------- Articles --------------- */
+
+section#articles {
+    width:100%;
+  }
+
+aside[role="complementary"] {
+    max-width:70%;
+    margin:auto;
+  }
+  
+section#articles {
+    background: #33536b;
+    max-width:100%;
+  }
+
+section#articles .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 0 0 4em 0;
+  }
+
+section#articles h2,
+#content h2 {
+  flex: 0 0 100%;
+  color: #33536b;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2em;
+}
+
+section#articles h2 {
+    color: #fff;
+    text-shadow: 2px 2px #000;
+  }
+
+#articles article.post {
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    transition: 0.6s;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    background: #fff;
+  }
+
+#articles article.post h2 {
+    font-size: 1.5em;
+    text-shadow: none;
+    color:#33536b;
+  }
+
+#articles article.post:hover {
+   box-shadow: 0 8px 26px rgba(0, 0, 0, 0.9);
+  }
+
+#articles .post figure {
+    margin: 0;
+  }
+
+#articles .post img {
+   border-radius: 10px;
+ }
+
+#articles ul {
+    padding: 0 20px;
+  }
+
+  #articles li {
+    margin-bottom: 20px;
+  }
+
+/* ------------- Hero --------------- */
+
+  #hero {
+    padding:4em 0;
+  }
+
+  div.fade.container.slick-initialized.slick-slider.slick-dotted{
+    margin: 40px auto;
+    width:70vw;
+    /* Set Max Content Width */
+    max-width:700px;
+}
+
+
+/* ------------- Aside --------------- */
+
+div .container{
+    max-width:100%;
+    background-color:#33536b;
+    color:#c0c0c0;
+    padding:2.5em;
+  
+  }
+
+/* Attribute Selector */
+
+aside.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+.widget table caption {
+    color:#151d3e;
+    font-size: 2.2em;
+    padding-bottom: 30px;
+    font-weight: bold;
+    margin: 10px;
+  }
+
+.widget table {
+    margin:auto;
+    font-size: 0.9em;
+    border-collapse: collapse;
+  }
+
+.widget table tr:nth-child(even){
+    background-color: rgba(0,0,0,0.1);
+  }
+  
+.widget table tr:hover{
+    background-color: rgba(0,0,0,0.3)
+  }
+
+.widget table td {
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+  }
+
+.widget table td:nth-child(even) {
+  text-align: right;
+}
+
+aside article a:link,
+aside article a:visited {
+  color: #ffffff;
+  display: block;
+  margin-top: 1.2em;
+  letter-spacing: 1.2px;
+}
+
+/*------ Footer ------*/
+
+footer#colophon {
+    background-color: #33536b;
+  }
+  
+  #colophon h6 {
+    padding: 20px;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  
+  #colophon h6 a:link,
+  #colophon h6 a:visited {
+    color: #fff;
+  }
+  
